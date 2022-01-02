@@ -9,9 +9,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS = ['mystore-drf-prod.herokuapp.com']
 
 DATABASES = {
-    'default': {
-        'default': dj_database_url.config()
-    }
+    'default': dj_database_url.config()
 }
 
 REDIS_URL = os.environ['REDIS_URL']
